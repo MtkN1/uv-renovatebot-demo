@@ -192,42 +192,17 @@ wheels = [
 name = "awscli"
 version = "1.11.18"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version < '3.10'",
-    "python_full_version == '3.11.*'",
-    "python_full_version == '3.12.*'",
-    "python_full_version >= '3.13'",
-]
 dependencies = [
-    { name = "botocore", version = "1.4.75", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*'" },
-    { name = "colorama", version = "0.3.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*'" },
+    { name = "botocore" },
+    { name = "colorama" },
+    { name = "docutils", version = "0.16", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
     { name = "docutils", version = "0.21.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*'" },
-    { name = "rsa", marker = "python_full_version != '3.10.*'" },
-    { name = "s3transfer", version = "0.1.13", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*'" },
+    { name = "rsa" },
+    { name = "s3transfer" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/3a/e1/b4b1cd26052b35c013440b1974e4be895040b3f32ca73c0274e41e85ee00/awscli-1.11.18.tar.gz", hash = "sha256:0c4f28e7ae96b6f294e7bdef1a60cbdf18aabeaad8245728c1b57cdd315887bd", size = 481257 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8d/40/fe038dbca1be0fdaf4b873f92acb8f10bf7e0d774bff2c6f4e6857ce4137/awscli-1.11.18-py2.py3-none-any.whl", hash = "sha256:d81e246cdd08ea825c4c65452e24a84744b90657830ea9ec9a1d764a9636d587", size = 1010064 },
-]
-
-[[package]]
-name = "awscli"
-version = "1.35.18"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version == '3.10.*'",
-]
-dependencies = [
-    { name = "botocore", version = "1.35.52", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
-    { name = "colorama", version = "0.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
-    { name = "docutils", version = "0.16", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
-    { name = "pyyaml", marker = "python_full_version == '3.10.*'" },
-    { name = "rsa", marker = "python_full_version == '3.10.*'" },
-    { name = "s3transfer", version = "0.10.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/59/d8/09414dcc669d19f26d09df340eafd874c24c4558c7dfff4797f0999b374c/awscli-1.35.18.tar.gz", hash = "sha256:a859ec91b2723b7c063a0eeccfc9a260c2b08072468a47d2d532eb25b102d676", size = 1825681 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/41/6c/621cd546e3c26448b36ef13c8d5dfddc778841f32d5fad5c3050991dfa7d/awscli-1.35.18-py3-none-any.whl", hash = "sha256:356205360c6e5489140c04b61d1eeec203e89ed53ea3cca3ec6d8edc5b995818", size = 4517144 },
 ]
 
 [[package]]
@@ -281,37 +256,15 @@ wheels = [
 name = "botocore"
 version = "1.4.75"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version < '3.10'",
-    "python_full_version == '3.11.*'",
-    "python_full_version == '3.12.*'",
-    "python_full_version >= '3.13'",
-]
 dependencies = [
+    { name = "docutils", version = "0.16", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
     { name = "docutils", version = "0.21.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*'" },
-    { name = "jmespath", marker = "python_full_version != '3.10.*'" },
-    { name = "python-dateutil", marker = "python_full_version != '3.10.*'" },
+    { name = "jmespath" },
+    { name = "python-dateutil" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a8/1e/d9a762b1103e89e387313fe8563c116c67168fda136d99d68bdf26aaee40/botocore-1.4.75.tar.gz", hash = "sha256:911bb0f6013e72c509cf702b25c92012a9548fc4635eb5665389f0c5e964bf1d", size = 2972123 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5d/dd/a6d9f1c3262812737bc5b7e8da0199a67134bda2959d59769013bbc099f7/botocore-1.4.75-py2.py3-none-any.whl", hash = "sha256:cad2ae9a872ffa4fb92a16c4876cf2a9c9b3e8abc5333a473ad6f74292745340", size = 2799059 },
-]
-
-[[package]]
-name = "botocore"
-version = "1.35.52"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version == '3.10.*'",
-]
-dependencies = [
-    { name = "jmespath", marker = "python_full_version == '3.10.*'" },
-    { name = "python-dateutil", marker = "python_full_version == '3.10.*'" },
-    { name = "urllib3", marker = "python_full_version == '3.10.*'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/62/d4/cd01ee85cc2c4cff999599bad0de68d8fa04593ab720917c450e8631e29a/botocore-1.35.52.tar.gz", hash = "sha256:1fe7485ea13d638b089103addd818c12984ff1e4d208de15f180b1e25ad944c5", size = 12914350 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/4a/28/a181e924c1e6179d9aa277bb6e96c3f32016a942aad12f84981a4058b094/botocore-1.35.52-py3-none-any.whl", hash = "sha256:cdbb5e43c9c3a977763e2a10d3b8b9c405d51279f9fcfd4ca4800763b22acba5", size = 12702991 },
 ]
 
 [[package]]
@@ -421,8 +374,7 @@ name = "click"
 version = "8.1.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", version = "0.3.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*' and platform_system == 'Windows'" },
-    { name = "colorama", version = "0.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*' and platform_system == 'Windows'" },
+    { name = "colorama", marker = "platform_system == 'Windows'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/96/d3/f04c7bfcf5c1862a2a5b845c6b2b360488cf47af55dfa79c98f6a6bf98b5/click-8.1.7.tar.gz", hash = "sha256:ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de", size = 336121 }
 wheels = [
@@ -433,27 +385,9 @@ wheels = [
 name = "colorama"
 version = "0.3.7"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version < '3.10'",
-    "python_full_version == '3.11.*'",
-    "python_full_version == '3.12.*'",
-    "python_full_version >= '3.13'",
-]
 sdist = { url = "https://files.pythonhosted.org/packages/f0/d0/21c6449df0ca9da74859edc40208b3a57df9aca7323118c913e58d442030/colorama-0.3.7.tar.gz", hash = "sha256:e043c8d32527607223652021ff648fbb394d5e19cba9f1a698670b338c9d782b", size = 24602 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/8e/ddb32ddaabd431813e180ca224e844bab8ad42fbb47ee07553f0ec44cd86/colorama-0.3.7-py2.py3-none-any.whl", hash = "sha256:a4c0f5bc358a62849653471e309dcc991223cf86abafbec17cd8f41327279e89", size = 19912 },
-]
-
-[[package]]
-name = "colorama"
-version = "0.4.6"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version == '3.10.*'",
-]
-sdist = { url = "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44", size = 27697 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6", size = 25335 },
 ]
 
 [[package]]
@@ -2022,8 +1956,7 @@ name = "pytest"
 version = "7.4.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", version = "0.3.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*' and sys_platform == 'win32'" },
-    { name = "colorama", version = "0.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*' and sys_platform == 'win32'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
     { name = "exceptiongroup", marker = "python_full_version < '3.11'" },
     { name = "iniconfig" },
     { name = "packaging" },
@@ -2298,33 +2231,12 @@ wheels = [
 name = "s3transfer"
 version = "0.1.13"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version < '3.10'",
-    "python_full_version == '3.11.*'",
-    "python_full_version == '3.12.*'",
-    "python_full_version >= '3.13'",
-]
 dependencies = [
-    { name = "botocore", version = "1.4.75", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*'" },
+    { name = "botocore" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/9a/66/c6a5ae4dbbaf253bd662921b805e4972451a6d214d0dc9fb3300cb642320/s3transfer-0.1.13.tar.gz", hash = "sha256:90dc18e028989c609146e241ea153250be451e05ecc0c2832565231dacdf59c1", size = 103335 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d7/14/2a0004d487464d120c9fb85313a75cd3d71a7506955be458eebfe19a6b1d/s3transfer-0.1.13-py2.py3-none-any.whl", hash = "sha256:c7a9ec356982d5e9ab2d4b46391a7d6a950e2b04c472419f5fdec70cc0ada72f", size = 59642 },
-]
-
-[[package]]
-name = "s3transfer"
-version = "0.10.3"
-source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version == '3.10.*'",
-]
-dependencies = [
-    { name = "botocore", version = "1.35.52", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/a0/a8/e0a98fd7bd874914f0608ef7c90ffde17e116aefad765021de0f012690a2/s3transfer-0.10.3.tar.gz", hash = "sha256:4f50ed74ab84d474ce614475e0b8d5047ff080810aac5d01ea25231cfc944b0c", size = 144591 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/e5/c0/b0fba8259b61c938c9733da9346b9f93e00881a9db22aafdd72f6ae0ec05/s3transfer-0.10.3-py3-none-any.whl", hash = "sha256:263ed587a5803c6c708d3ce44dc4dfedaab4c1a32e8329bab818933d79ddcf5d", size = 82625 },
 ]
 
 [[package]]
@@ -2474,8 +2386,7 @@ name = "tqdm"
 version = "4.66.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", version = "0.3.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*' and platform_system == 'Windows'" },
-    { name = "colorama", version = "0.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*' and platform_system == 'Windows'" },
+    { name = "colorama", marker = "platform_system == 'Windows'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/e9/34/bef135b27fe1864993a5284ad001157ee9b5538e859ac90f5b0e8cc8c9ec/tqdm-4.66.6.tar.gz", hash = "sha256:4bdd694238bef1485ce839d67967ab50af8f9272aab687c0d7702a01da0be090", size = 169533 }
 wheels = [
@@ -2542,8 +2453,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "aiohttp" },
-    { name = "awscli", version = "1.11.18", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version != '3.10.*'" },
-    { name = "awscli", version = "1.35.18", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.10.*'" },
+    { name = "awscli" },
     { name = "gradio" },
     { name = "streamlit" },
 ]
