@@ -2299,7 +2299,7 @@ wheels = [
 
 [[package]]
 name = "streamlit"
-version = "1.40.0"
+version = "1.40.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "altair" },
@@ -2322,9 +2322,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "watchdog", marker = "platform_system != 'Darwin'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fc/2b/8b9f0cb78a82dcd2ccf90e487af17742a2fac4b6732e306bd4fd72ca669b/streamlit-1.40.0.tar.gz", hash = "sha256:6e4d3b90c4934951f97d790daf7953df5beb2916e447ac9f78e1b76a9ef83327", size = 8254667 }
+sdist = { url = "https://files.pythonhosted.org/packages/80/70/b76a32201b04a5a2a1c667fe7327cb7a3cc25d726d3863ba5863d2b0dccf/streamlit-1.40.1.tar.gz", hash = "sha256:1f2b09f04b6ad366a2c7b4d48104697d1c8bc33f48bdf7ed939cc04c12d3aec6", size = 8266452 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e2/8c/0f994c6d0c362c2635e1478e175570a9e78d60f19967eb8bf39d2e0bcfab/streamlit-1.40.0-py2.py3-none-any.whl", hash = "sha256:05d22bc111d682ef4deaf7ededeec2305051b99dd6d7d564788705e4ce6f8029", size = 8634735 },
+    { url = "https://files.pythonhosted.org/packages/9a/14/857d0734989f3d26f2f965b2e3f67568ea7a6e8a60cb9c1ed7f774b6d606/streamlit-1.40.1-py2.py3-none-any.whl", hash = "sha256:b9d7a317a0cc88edd7857c7e07dde9cf95647d3ae51cbfa8a3db82fbb8a2990d", size = 8645398 },
 ]
 
 [[package]]
