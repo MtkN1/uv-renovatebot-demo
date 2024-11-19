@@ -8,10 +8,10 @@ authors = [
 ]
 requires-python = ">=3.9"
 dependencies = [
-    "aiohttp>=3.10.10",
-    "awscli>=1.11.18",
-    "gradio>=4.44.0",
-    "streamlit>=1.39.0",
+    "aiohttp",
+    "awscli",
+    "gradio",
+    "streamlit",
 ]
 
 [build-system]
