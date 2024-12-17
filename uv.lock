@@ -2351,7 +2351,7 @@ wheels = [
 
 [[package]]
 name = "streamlit"
-version = "1.40.1"
+version = "1.41.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "altair" },
@@ -2374,9 +2374,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "watchdog", marker = "platform_system != 'Darwin'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/80/70/b76a32201b04a5a2a1c667fe7327cb7a3cc25d726d3863ba5863d2b0dccf/streamlit-1.40.1.tar.gz", hash = "sha256:1f2b09f04b6ad366a2c7b4d48104697d1c8bc33f48bdf7ed939cc04c12d3aec6", size = 8266452 }
+sdist = { url = "https://files.pythonhosted.org/packages/78/33/14b5ac0369ecf0af675911e5e84b934e6fcc2cec850857d2390eb373b0a6/streamlit-1.41.1.tar.gz", hash = "sha256:6626d32b098ba1458b71eebdd634c62af2dd876380e59c4b6a1e828a39d62d69", size = 8712473 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9a/14/857d0734989f3d26f2f965b2e3f67568ea7a6e8a60cb9c1ed7f774b6d606/streamlit-1.40.1-py2.py3-none-any.whl", hash = "sha256:b9d7a317a0cc88edd7857c7e07dde9cf95647d3ae51cbfa8a3db82fbb8a2990d", size = 8645398 },
+    { url = "https://files.pythonhosted.org/packages/c2/87/b2e162869500062a94dde7589c167367b5538dab6eacce2e7c0f00d5c9c5/streamlit-1.41.1-py2.py3-none-any.whl", hash = "sha256:0def00822480071d642e6df36cd63c089f991da3a69fd9eb4ab8f65ce27de4e0", size = 9100386 },
 ]
 
 [[package]]
@@ -2450,10 +2450,10 @@ name = "typer"
 version = "0.13.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "click", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
-    { name = "rich", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
-    { name = "shellingham", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
-    { name = "typing-extensions", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
+    { name = "click", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
+    { name = "rich", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
+    { name = "shellingham", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
+    { name = "typing-extensions", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/76/41/49ead3ad3310545e767bcb917c759b026ca9eada5d5c150c2fb6fc555568/typer-0.13.1.tar.gz", hash = "sha256:9d444cb96cc268ce6f8b94e13b4335084cef4c079998a9f4851a90229a3bd25c", size = 98631 }
 wheels = [
@@ -2631,9 +2631,9 @@ name = "uvicorn"
 version = "0.32.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "click", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
-    { name = "h11", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
-    { name = "typing-extensions", marker = "(python_full_version < '3.10' and sys_platform != 'emscripten') or python_full_version == '3.10.*'" },
+    { name = "click", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
+    { name = "h11", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
+    { name = "typing-extensions", marker = "(python_full_version < '3.11' and sys_platform != 'emscripten') or (python_full_version == '3.10.*' and sys_platform == 'emscripten')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/e0/fc/1d785078eefd6945f3e5bab5c076e4230698046231eb0f3747bc5c8fa992/uvicorn-0.32.0.tar.gz", hash = "sha256:f78b36b143c16f54ccdb8190d0a26b5f1901fe5a3c777e1ab29f26391af8551e", size = 77564 }
 wheels = [
