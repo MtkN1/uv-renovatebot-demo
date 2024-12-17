@@ -192,7 +192,7 @@ wheels = [
 
 [[package]]
 name = "awscli"
-version = "1.36.5"
+version = "1.36.23"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "botocore" },
@@ -202,9 +202,9 @@ dependencies = [
     { name = "rsa" },
     { name = "s3transfer" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a1/97/662504e805957115cc9f6c1994fd0c25315513f092453fe9cde0240a9d2d/awscli-1.36.5.tar.gz", hash = "sha256:90c0b3d853f172789387a31899cae21336954b8d4d9f0803158a56a61b5b0bf4", size = 1825776 }
+sdist = { url = "https://files.pythonhosted.org/packages/3e/a4/8b499fef718a6457ac3771ea01c289c74f725144d580e3b7b58adb8603dd/awscli-1.36.23.tar.gz", hash = "sha256:f03d4a67c319bd512092bf47f247c4384b655d3a692a475dfa1a575c7e1a33fe", size = 1833428 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1d/bb/749c2e921f68acf342286e1f492c28cccd59f561fb926bb5b05dcb2a2c66/awscli-1.36.5-py3-none-any.whl", hash = "sha256:3242c720fefeacc1ae3030bd441ed20172deff07b7e564f96b8712413f56d860", size = 4517391 },
+    { url = "https://files.pythonhosted.org/packages/af/06/9e904497713ca7369f6d134f93a5e66a6d755e4ad2cad5b9ddbf79faf4d2/awscli-1.36.23-py3-none-any.whl", hash = "sha256:450af1d347e056fe2bcb3fc36e97abf5472cc14b58bc3c356698d3a86c0f33f3", size = 4535744 },
 ]
 
 [[package]]
@@ -256,7 +256,7 @@ wheels = [
 
 [[package]]
 name = "botocore"
-version = "1.35.64"
+version = "1.35.82"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jmespath" },
@@ -264,9 +264,9 @@ dependencies = [
     { name = "urllib3", version = "1.26.20", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
     { name = "urllib3", version = "2.2.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0e/d3/71c2bbccea5a307e9b6218e41b5189d5e0c61217dc8d883dcac6a2aae762/botocore-1.35.64.tar.gz", hash = "sha256:2f95c83f31c9e38a66995c88810fc638c829790e125032ba00ab081a2cf48cb9", size = 13057662 }
+sdist = { url = "https://files.pythonhosted.org/packages/41/d6/780b2100d949306434e70b2b99e85411623402266d95eee9a10e6ac765ac/botocore-1.35.82.tar.gz", hash = "sha256:78dd7bf8f49616d00073698d7bbaf5a115208fe730b7b7afae4456adddb3552e", size = 13463284 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/63/14/664640de4817e2fa619f804e2bc753c3ffe4bfc8486a57e275483e6c6e3e/botocore-1.35.64-py3-none-any.whl", hash = "sha256:bbd96bf7f442b1d5e35b36f501076e4a588c83d8d84a1952e9ee1d767e5efb3e", size = 12852015 },
+    { url = "https://files.pythonhosted.org/packages/d0/46/d2c409ec1922e97a0a8458968d6af602620cc91ba897c4b8d3f9e8de9fb4/botocore-1.35.82-py3-none-any.whl", hash = "sha256:e43b97d8cbf19d35ce3a177f144bd97cc370f0a67d0984c7d7cf105ac198748f", size = 13267018 },
 ]
 
 [[package]]
@@ -2450,10 +2450,10 @@ name = "typer"
 version = "0.13.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "click", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
-    { name = "rich", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
-    { name = "shellingham", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
-    { name = "typing-extensions", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
+    { name = "click", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
+    { name = "rich", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
+    { name = "shellingham", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
+    { name = "typing-extensions", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/76/41/49ead3ad3310545e767bcb917c759b026ca9eada5d5c150c2fb6fc555568/typer-0.13.1.tar.gz", hash = "sha256:9d444cb96cc268ce6f8b94e13b4335084cef4c079998a9f4851a90229a3bd25c", size = 98631 }
 wheels = [
@@ -2631,9 +2631,9 @@ name = "uvicorn"
 version = "0.32.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "click", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
-    { name = "h11", marker = "sys_platform != 'emscripten' or python_full_version >= '3.10'" },
-    { name = "typing-extensions", marker = "(python_full_version < '3.10' and sys_platform != 'emscripten') or python_full_version == '3.10.*'" },
+    { name = "click", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
+    { name = "h11", marker = "python_full_version >= '3.10' or sys_platform != 'emscripten'" },
+    { name = "typing-extensions", marker = "(python_full_version < '3.11' and sys_platform != 'emscripten') or (python_full_version == '3.10.*' and sys_platform == 'emscripten')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/e0/fc/1d785078eefd6945f3e5bab5c076e4230698046231eb0f3747bc5c8fa992/uvicorn-0.32.0.tar.gz", hash = "sha256:f78b36b143c16f54ccdb8190d0a26b5f1901fe5a3c777e1ab29f26391af8551e", size = 77564 }
 wheels = [
