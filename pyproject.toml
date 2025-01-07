@@ -17,6 +17,6 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 test = ["pytest<8", "coverage"]
-typing = ["mypy==1.7.1", "types-requests"]
+typing = ["mypy==1.14.1", "types-requests"]
 lint = ["black", "flake8"]
 typing-test = [{include-group = "typing"}, "pytest<8"]
