@@ -1,14 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ],
-  "rangeStrategy": "in-range-only",
-  "vulnerabilityAlerts": {
-    "enabled": true
-  },
-  "osvVulnerabilityAlerts": true,
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": true,
+    "schedule": [
+      "at any time"
+    ]
   }
 }

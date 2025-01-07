@@ -8,10 +8,7 @@ authors = [
 ]
 requires-python = ">=3.9"
 dependencies = [
-    "aiohttp",
-    "awscli",
-    "gradio",
-    "streamlit",
+    "awscli>=1.36.0",
 ]
 
 [build-system]
@@ -22,9 +19,4 @@ build-backend = "hatchling.build"
 test = ["pytest<8", "coverage"]
 typing = ["mypy==1.7.1", "types-requests"]
 lint = ["black", "flake8"]
-typing-test = [{ include-group = "typing" }, "pytest<8"]
-dev = [
-    { include-group = "test" },
-    { include-group = "lint" },
-    { include-group = "typing-test" },
-]
+typing-test = [{include-group = "typing"}, "pytest<8"]
